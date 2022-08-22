@@ -21,7 +21,6 @@ body{
 {
     padding-top: 50px;
     font-size: 20px;
-
 }
 .bottom-left{
     position: absolute;
@@ -35,8 +34,7 @@ body{
 }
 .top-left{
     position: absolute;
-    top: 0;
-    left: 0;
+
     
 }
 .top-left a {
