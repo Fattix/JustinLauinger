@@ -134,6 +134,9 @@ window.addEventListener('mouseout',
         mouse.x = undefined;
     }
 )
-
+window.addEventListener("mousemove", parallax);
+function parallax(e){
+    this.querySelectorAll
+}
 init();
 animate();
