@@ -76,7 +76,7 @@ h1{
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(#181818,#181818);
+    background: #0f111a;
     z-index: -1;
 }
 .about
@@ -88,6 +88,8 @@ h1{
     position: absolute;
     bottom: 0;
     left: 0;
+    color:rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace
 }
 .bottom-right{
     position: absolute;
@@ -108,6 +110,7 @@ h1{
 }
 .two-buttons
 {
+    transition: 0.2s;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -117,6 +120,7 @@ h1{
 
 }
 .two-buttons a {
+    transition: 0.2s;
     color: #fff;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
@@ -133,6 +137,77 @@ h1{
     margin: 40px auto;
     padding-top: 50px;
 }
+.imageContainer
+{
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture1
+{
+    transition: .3s;
+    width: 740px;
+    height: 450px;
+    margin-left: 100px;
+}
+.picture2
+{
+    transition: .3s;
+    width: 740px;
+    height: 450px;
+    margin-right: 100px;
+}
+.textContainer
+{
+    display:flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.textG
+{  
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    color: #fff;
+
+}
+.textC
+{  
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    color: #fff;
+}
+.return-link
+{
+    transition: 0.2s;
+   color:#fff;
+   font-family:'Courier New', Courier, monospace; 
+   text-decoration: none; 
+   font-size: 25px; 
+   padding-top: 25px
+}
+.aboutText
+{
+    color:#fff;
+    font-family:'Courier New', Courier, monospace; 
+    text-decoration: none; 
+    font-size: 25px; 
+    margin: 50px;
+    text-align: center;
+    
+
+}
+.socials-link
+{
+    transition: 0.2s;
+   color:#fff;
+   font-family:'Courier New', Courier, monospace; 
+   text-decoration: none; 
+   font-size: 25px; 
+   font-weight: bold;
+   
+}
+
 @media only screen and(max-width: 1400px){
     .two-buttons {
         width: 90%;
@@ -185,20 +260,39 @@ h1{
     margin: 40px auto;
 
     }
+    .picturesP
+    {
+        visibility: hidden;
+
+    }
+    
 }
 #first-link:hover
 {
     cursor: url(1.png), auto;
-    color: rgb(40, 40, 255);
+    font-size: 22px;
 }
 #second-link:hover
 {
     cursor: url(1.png), auto;
-    color: rgb(40, 40, 255);
+    font-size: 22px;
 }
 #third-link:hover
 {
     cursor: url(1.png), auto;
-    color: rgb(40, 40, 255);
+    font-size: 22px;
 }
-
+.picture1:hover{
+    width: 755px;
+    height: 465px;
+}
+.picture2:hover{
+    width: 755px;
+    height: 465px;
+}
+.return-link:hover{
+    font-size: 27px;
+}
+.socials-link:hover{
+    font-size: 27px;
+}
